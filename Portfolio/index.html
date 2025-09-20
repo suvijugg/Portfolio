@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#activity">Activity</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id ="hamburger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="hamburger-menu">
+            <div class = "hamburger-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#activity" onclick="toggleMenu()">Activity</a></li>
+                <li><a href="#certificate" onclick="toggleMenu()">Certificate</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./images/profile-pic.png" alt="">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title typing">Suvijug Tangchutaveesub</h1>
+            <p class="section__text__p2">Computer Science</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
+            </div>
+            <div id ="socials-container">
+                <img src="./images/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/suvijug-tangchutaveesub-288809380/'">
+                <img src="./images/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/suvijugg'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container-about">
+            <img src="./images/about-pic.png" alt="profile-picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./images/language.png" alt="experience icon" class="icon">
+                    <h3>Language</h3>
+                    <h4>Thai (native) <br>English (fair) </h4>
+                </div>
+                <div class="details-container">
+                    <img src="./images/education.png" alt="Education icon" class="icon">
+                    <h3>Education</h3>
+                    <h4>School of Information Technology and Innovation  <br>in Computer Science</h4>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>I'm 22 years old and I like learning new things and exploring new experiences. I'm always looking to grow, and I'm punctual and responsible. I have a strong interest in front-end development because I enjoy designing and building web pages that users can interact with and see come to life.
+                    In my free time, I like singing and exercising. I’m also an adaptable and friendly person who can working with others.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="experience-details-container">
+        <h2 class="experience-sub-title">Hard Skills</h2>
+        <div class="article-container">
+            <article>
+                <img src="./images/html-pic.png" alt="Html icon" class="icon">
+                <h3>HTML</h3>
+            </article>
+            <article>
+                <img src="./images/css-pic.png" alt="Css icon" class="icon">
+                <h3>CSS</h3>
+            </article>
+            <article>
+                <img src="./images/javascript-pic.png" alt="Javascript icon" class="icon">
+                <h3>JavaScript</h3>
+            </article>
+            <article>
+                <img src="./images/ui_ux-pic.png" alt="UI_UX icon" class="icon">
+                <h3>UI/UX Design</h3>
+            </article>
+            <article>
+                <img src="./images/Adobe_Photoshop-pic.svg.png" alt="Adobe_Photoshop icon" class="icon">
+                <h3>Adobe Photoshop</h3>
+            </article>
+            <article>
+                <img src="./images/Adobe_Premiere_Pro-pic.svg.png" alt="Adobe_Premiere_Pro icon" class="icon">
+                <h3>Adobe Premiere Pro</h3>
+            </article>
+            <article>
+                <img src="./images/Figma.png" alt="Figma icon" class="icon">
+                <h3>Figma</h3>
+            </article>
+        </div>
+    </div>
+
+    <div class="experience-details-container">
+        <h2 class="experience-sub-title">Soft Skills</h2>
+        <div class="article-container">
+            <article>
+                <img src="./images/adaptability.png" alt="UI_UX icon" class="icon">
+                <h3>Adaptability</h3>
+            </article>
+            <article>
+                <img src="./images/creativity.png" alt="Adobe_Photoshop icon" class="icon">
+                <h3>Creativity</h3>
+            </article>
+            <article>
+                <img src="./images/responsibility.png" alt="Adobe_Premiere_Pro icon" class="icon">
+                <h3>Responsibility</h3>
+            </article>
+              <article>
+                <img src="./images/communication.png" alt="Adobe_Premiere_Pro icon" class="icon">
+                <h3>Communication</h3>
+            </article>
+        </div>
+    </div>
+    </section>
+    <section id="projects">
+        <h1 class="title">Project</h1>
+        <div class="experience-details-container">
+            <div class="project-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project-1.png" alt="project 1" class="project-img">
+                    <h2 class="experience-sub-title project-title">Lunar Cafe</h2>
+                    <p>Lunar Cafe เป็นเว็บไซต์สำหรับบริหารจัดการร้านบอร์ดเกม โดยระบบนี้ช่วยให้เจ้าของร้านสามารถจัดการคลังสินค้า, ตรวจสอบรายรับรายจ่าย, และให้ลูกค้าจองบอร์ดเกมล่วงหน้าได้ระบบยังมีหน้าสำหรับขายเครื่องดื่มออนไลน์ โดยผมรับหน้าที่หลักในการออกแบบและวางโครงสร้างหน้าต่าง ๆ ของเว็บไซต์ เช่น หน้าคลังสินค้า, หน้าเช่าบอร์ดเกม, หน้าแสดงเมนูเครื่องดื่ม และหน้ารายงานยอดขาย เพื่อให้ใช้งานง่ายและตอบโจทย์ทั้งผู้ดูแลร้านและลูกค้า</p>
+                </div>
+            </div>
+             <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project-2.PNG" alt="project 2" class="project-img">
+                    <h2 class="experience-sub-title project-title">Gacha simulator</h2>
+                    <p>เป็นเกมกาชาที่จะใช้ดวงของผู้เล่นในการสุ่มเป็นหลักไม่ว่าจะเป็นเรื่องของการ์ดที่ได้หรือบอสที่จะต้องพบเจอในแต่ละรอบที่เล่น มีเรื่องของการ์ดบัฟ,ดีบัฟ,โจมตี และป้องกัน โดยเป็นโปรเจคเล็กๆที่ทำร่วมกับเพื่อนร่วมทีม</p>
+                </div>
+            </div>
+             <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project-3.png" alt="project 3" class="project-img">
+                    <h2 class="experience-sub-title project-title">Echoes of Abyss</h2>
+                    <p>เกมแนว metroidvenia dark fantasy ที่สร้างโดยใช้ unity ผู้เล่นจะได้รับบทเป็น "ผู้เดินทางผู้โดดเดี่ยว" ซึ่งถูกดึงดูดมายังซากปรักหักพังของอารยธรรมที่หลงลืม เพื่อค้นหาคำตอบ และหนทางในการฟื้นฟูสมดุลของโลกใบนี้ โดยหน้าที่หลักจะเป็นการวาดตัวละคร วาดพื้นหลัง และวางโครงเนื้อเรื่องการดำเนินเกม</p>
+                </div>
+            </div>
+             <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project-4.png" alt="project 4" class="project-img">
+                    <h2 class="experience-sub-title project-title">Weather App</h2>
+                    <p>เว็บไซต์นี้พัฒนาด้วย HTML, CSS และ JavaScript โดยเชื่อมต่อกับ API สภาพอากาศ เพื่อดึงข้อมูลสภาพอากาศปัจจุบันจากทั่วโลกแบบเรียลไทม์ ผู้ใช้สามารถพิมพ์ชื่อเมืองที่ต้องการในช่องค้นหา และกดปุ่มเพื่อแสดงผล ข้อมูลที่จะแสดงประกอบด้วย สภาพอากาศ, อุณหภูมิ และรายละเอียดที่เกี่ยวข้อง โดยมีการออกแบบ UI/UX ให้เรียบง่ายและใช้งานสะดวก</p>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project-5.PNG" alt="project 2" class="project-img">
+                    <h2 class="experience-sub-title project-title">Clothes Shop</h2>
+                    <p>เว็บไซต์นี้พัฒนาด้วย HTML และ CSS โดยออกแบบมาเพื่อแสดงสินค้าเสื้อผ้าของแบรนด์ต่าง ๆ ให้ผู้ใช้สามารถเข้าชมและเลือกดูสินค้าได้อย่างสะดวก ภายในเว็บไซต์จะแสดงรายละเอียดของเสื้อผ้า เช่น รูปภาพสินค้า ชื่อรุ่น ราคา และข้อมูลที่เกี่ยวข้อง โดยมีการออกแบบ UI/UX เน้นความเรียบง่าย สบายตา และใช้งานได้ง่าย เพื่อให้ผู้ใช้สามารถค้นหาและเลือกดูสินค้าได้อย่างราบรื่น</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="activity">
+  <h1 class="title">Activity</h1>
+    <div class="activity-wrapper">
+        <div class="activity-image">
+            <img src="./images/activity-pic.jpg" alt="activity" class="activity-img">
+        </div>
+            <div class="activity-text">
+                <h2 class="activity-sub-title">Modeling</h2>
+                    <p>
+                    ถ่ายแบบให้กับคอลเลคชั่น EVERYDAY KILLS 2024 
+                    โดยใช้โทนสี <strong>#KIRATERA</strong> 
+                    ซึ่งออกแบบและดูแลโดย Expert Clear
+                    </p>
+             </div>
+        </div>
+    </section>
+    <section id="certificate">
+  <h1 class="title-certificate">Certificate</h1>
+  <div class="certificate-details-container">
+    <div class="certificate-item">
+      <img src="./images/business model canvas.PNG" alt="Business model canvas">
+      <h2>Business Model Canvas</h2>
+    </div>
+    <div class="certificate-item">
+      <img src="./images/design thinking.PNG" alt="Design thinking">
+      <h2>Design Thinking</h2>
+    </div>
+    <div class="certificate-item">
+      <img src="./images/finance for starting business.PNG" alt="Finance for Starting Business">
+      <h2>Finance for Starting Business</h2>
+    </div>
+    <div class="certificate-item">
+      <img src="./images/cyber awareness.PNG" alt="Cybersecurity Awareness">
+      <h2>Cybersecurity Awareness</h2>
+    </div>
+  </div>
+</section>
+    <footer id="contact">  
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p>Suvijug.tang@bumail.net</p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./images/phone.png" alt="Phone icon" class="icon contact-icon phone-icon">
+                <p>0869792222</p>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
