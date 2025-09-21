@@ -151,6 +151,7 @@ section{
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    scroll-margin-top: 80px;
 }
 .section-container{
     display: flex;
@@ -197,6 +198,9 @@ section{
 .title{
     font-size: 2.5rem;
     text-align: center; 
+    color: #1E3A8A;
+}
+.title-text{
     color: black;
 }
 #socials-container{
@@ -398,7 +402,7 @@ article .icon{
     align-items: center;
     background: white;
     border-radius: 1rem;
-    border: 2px solid #172333;
+    border: 3px solid #172333;
     padding: 1rem; 
 }
 .color-container{
@@ -448,8 +452,8 @@ article .icon{
     flex: auto;
     text-align: center;
     background-color: white;
-    border-radius: 2rem;
-    border: 2px solid #172333;
+    border-radius: 5rem;
+    border: 3px solid #172333;
 }
 
 .activity-sub-title {
@@ -501,7 +505,6 @@ article .icon{
     font-size: 1.2rem;
     text-align: left;
     color: #020a1f;
-      
     padding: 0.5rem 0.5rem;      
     border-radius: 0.5rem;     
     
